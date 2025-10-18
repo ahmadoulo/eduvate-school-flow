@@ -47,7 +47,18 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Eduvate. {t('footer.rights')}.
+          <p>© {new Date().getFullYear()} Eduvate. {t('footer.rights')}.</p>
+          <p className="mt-2">
+            Created by{' '}
+            <a
+              href="https://senovate-it.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-smooth font-medium"
+            >
+              Senovate IT
+            </a>
+          </p>
         </div>
       </div>
     </footer>

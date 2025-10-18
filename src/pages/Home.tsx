@@ -31,28 +31,36 @@ const Home = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="gradient-hero pt-32 pb-20 px-4">
+      <section className="gradient-hero pt-32 pb-20 px-4 min-h-[85vh] flex items-center">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="inline-block mb-4 px-4 py-2 rounded-full bg-muted text-sm font-medium"
+              >
+                Eduvate.io
+              </motion.div>
+              <h1 className="font-bold mb-6 leading-tight">
                 {t('hero.title')}
               </h1>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-lg mb-10 max-w-lg">
                 {t('hero.subtitle')}
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact">
-                  <Button size="lg" className="gradient-primary shadow-glow text-lg px-8">
+                  <Button size="lg" className="gradient-primary shadow-lg text-base px-8 h-12">
                     {t('hero.cta')} <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
                 <Link to="/contact">
-                  <Button size="lg" variant="outline" className="text-lg px-8">
+                  <Button size="lg" variant="outline" className="text-base px-8 h-12">
                     {t('hero.demo')}
                   </Button>
                 </Link>
@@ -62,14 +70,14 @@ const Home = () => {
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
               className="relative"
             >
-              <div className="absolute inset-0 gradient-primary opacity-20 blur-3xl rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/5 to-transparent blur-3xl rounded-full"></div>
               <img
                 src={heroDashboard}
-                alt="Eduvate Dashboard"
-                className="relative rounded-2xl shadow-2xl w-full"
+                alt="Eduvate Dashboard - Plateforme cloud de gestion scolaire moderne"
+                className="relative rounded-xl shadow-2xl w-full border border-border/50"
               />
             </motion.div>
           </div>
