@@ -21,42 +21,42 @@ const Features = () => {
     {
       icon: Users,
       title: 'Gestion des élèves',
-      description: 'Base de données centralisée avec profils complets, historique académique et suivi personnalisé.',
+      description: 'Interface professeur, étudiant et école. Base de données centralisée avec profils complets et accès instantané aux données.',
     },
     {
       icon: GraduationCap,
       title: 'Notes & Évaluations',
-      description: 'Système de notation flexible, bulletins automatisés et analyse de performance en temps réel.',
+      description: 'Système de notation flexible avec export des notes en PDF. Bulletins automatisés et analyse de performance.',
     },
     {
       icon: Calendar,
-      title: 'Emplois du temps',
-      description: 'Création automatique des plannings, gestion des salles et notifications intelligentes.',
+      title: 'Présence via QR Code',
+      description: 'Prise de présence instantanée par scan QR code. Export des présences en PDF et suivi en temps réel.',
     },
     {
-      icon: CreditCard,
-      title: 'Paiements en ligne',
-      description: 'Facturation automatique, paiements sécurisés et suivi des transactions en temps réel.',
+      icon: BarChart3,
+      title: 'Analyses & IA',
+      description: 'Intelligence artificielle intégrée. Analyses avancées, prédictions et insights automatiques.',
     },
     {
       icon: MessageSquare,
       title: 'Communication',
-      description: 'Messagerie intégrée, notifications push et portail parents-professeurs.',
-    },
-    {
-      icon: BarChart3,
-      title: 'Analytics & Rapports',
-      description: 'Tableaux de bord interactifs, statistiques avancées et exports personnalisables.',
+      description: 'Messagerie intégrée, notifications push et portail parents-professeurs avec accès instantané.',
     },
     {
       icon: Shield,
-      title: 'Sécurité & Conformité',
-      description: 'Chiffrement des données, conformité RGPD et sauvegardes automatiques.',
+      title: 'Support inclus',
+      description: 'Support technique compris dans tous les plans. Assistance rapide et formation à la plateforme.',
     },
     {
       icon: Cloud,
       title: 'Cloud & Mobile',
-      description: 'Accès depuis n\'importe où, synchronisation en temps réel et applications mobiles.',
+      description: 'Accès depuis n\'importe où, synchronisation en temps réel. Données sécurisées dans le cloud.',
+    },
+    {
+      icon: CreditCard,
+      title: 'Export PDF',
+      description: 'Exportez facilement notes, présences et rapports en PDF. Documents professionnels prêts à l\'emploi.',
     },
   ];
 
@@ -71,8 +71,8 @@ const Features = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-5xl font-bold mb-6">Fonctionnalités Complètes</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <h1 className="font-bold mb-6">Fonctionnalités Complètes</h1>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
               Tout ce dont vous avez besoin pour gérer votre établissement scolaire de manière moderne et efficace.
             </p>
           </motion.div>
