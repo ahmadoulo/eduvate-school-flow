@@ -13,8 +13,8 @@ const resources = {
         login: 'Connexion',
       },
       hero: {
-        title: 'Simplifiez la vie scolaire',
-        subtitle: 'De l\'inscription à la gestion des notes, tout en un seul clic.',
+        title: 'Plateforme IA Révolutionnaire pour la Gestion Scolaire',
+        subtitle: 'Transformez votre école avec l\'IA, l\'automatisation intelligente et WhatsApp intégré. Tout en un seul endroit.',
         cta: 'Essayer gratuitement',
         demo: 'Demander une démo',
         usedBy: 'Utilisé par',
@@ -100,8 +100,8 @@ const resources = {
         login: 'Login',
       },
       hero: {
-        title: 'Simplify School Life',
-        subtitle: 'From enrollment to grades management, everything in one click.',
+        title: 'Revolutionary AI Platform for School Management',
+        subtitle: 'Transform your school with AI, intelligent automation and integrated WhatsApp. All in one place.',
         cta: 'Try for Free',
         demo: 'Request Demo',
         usedBy: 'Used by',
@@ -187,8 +187,8 @@ const resources = {
         login: 'Iniciar sesión',
       },
       hero: {
-        title: 'Simplifique la Vida Escolar',
-        subtitle: 'Desde la inscripción hasta la gestión de calificaciones, todo en un clic.',
+        title: 'Plataforma IA Revolucionaria para Gestión Escolar',
+        subtitle: 'Transforme su escuela con IA, automatización inteligente y WhatsApp integrado. Todo en un solo lugar.',
         cta: 'Probar Gratis',
         demo: 'Solicitar Demo',
         usedBy: 'Usado por',

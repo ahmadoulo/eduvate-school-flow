@@ -47,10 +47,10 @@ const Home = () => {
               >
                 Eduvate.io
               </motion.div>
-              <h1 className="font-bold mb-6 leading-tight">
+              <h1 className="font-bold mb-6 leading-tight text-foreground">
                 {t('hero.title')}
               </h1>
-              <p className="text-lg mb-10 max-w-lg">
+              <p className="text-lg mb-10 max-w-lg text-foreground/90">
                 {t('hero.subtitle')}
               </p>
               <div className="flex flex-wrap gap-4">
