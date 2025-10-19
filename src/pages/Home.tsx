@@ -55,12 +55,12 @@ const Home = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact">
-                  <Button size="lg" className="gradient-primary shadow-lg text-base px-8 h-12">
+                  <Button size="lg" className="shadow-md hover:shadow-lg transition-smooth text-base px-8 h-12">
                     {t('hero.cta')} <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
                 <Link to="/contact">
-                  <Button size="lg" variant="outline" className="text-base px-8 h-12">
+                  <Button size="lg" variant="outline" className="shadow-sm hover:shadow-md transition-smooth text-base px-8 h-12">
                     {t('hero.demo')}
                   </Button>
                 </Link>
@@ -139,7 +139,7 @@ const Home = () => {
 
           <div className="text-center mt-12">
             <Link to="/features">
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="shadow-sm hover:shadow-md transition-smooth">
                 Découvrir toutes les fonctionnalités <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
@@ -148,7 +148,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 gradient-primary">
+      <section className="py-20 px-4 bg-primary text-primary-foreground">
         <div className="container mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -156,14 +156,14 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="mb-6">
               Prêt à transformer votre établissement ?
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
               Rejoignez des centaines d'écoles qui ont choisi Eduvate pour simplifier leur gestion quotidienne.
             </p>
             <Link to="/contact">
-              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 shadow-glow">
+              <Button size="lg" variant="secondary" className="shadow-lg hover:shadow-xl transition-smooth">
                 Démarrer gratuitement <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>

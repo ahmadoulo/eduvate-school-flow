@@ -17,22 +17,24 @@ const Pricing = () => {
     setCountry(detectCountry());
   }, []);
 
+  const getFeatures = () => [
+    `✨ ${t('pricing.aiPowered')}`,
+    `📊 ${t('pricing.analytics')}`,
+    `📄 ${t('pricing.pdfExport')}`,
+    `👥 ${t('pricing.multiInterface')}`,
+    `📱 ${t('pricing.qrAttendance')}`,
+    `⚡ ${t('pricing.instantData')}`,
+    `💬 Communication temps réel`,
+    `🛡️ ${t('pricing.support')}`,
+    `☁️ Stockage cloud sécurisé`,
+    `📲 Application mobile`,
+  ];
+
   const plans = [
     {
       name: 'Eduvate',
       basePrice: 120,
-      features: [
-        '✨ Intelligence Artificielle intégrée',
-        '📊 Analyses et statistiques avancées',
-        '📄 Export notes & présences en PDF',
-        '👥 Interface professeur, étudiant & école',
-        '📱 Prise de présence par QR code',
-        '⚡ Accès instantané aux données',
-        '💬 Communication temps réel',
-        '🛡️ Support technique inclus',
-        '☁️ Stockage cloud sécurisé',
-        '📲 Application mobile',
-      ],
+      features: getFeatures(),
       popular: true,
     },
   ];
@@ -48,9 +50,9 @@ const Pricing = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="font-bold mb-6">Tarification Simple & Transparente</h1>
-            <p className="text-muted-foreground max-w-3xl mx-auto">
-              Un seul prix, toutes les fonctionnalités incluses
+            <h1 className="font-bold mb-6">{t('pricing.title')}</h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              {t('pricing.subtitle')}
             </p>
           </motion.div>
         </div>
@@ -84,7 +86,7 @@ const Pricing = () => {
                           <span className="text-2xl text-muted-foreground">{pricing.symbol}</span>
                         </div>
                         <div className="text-muted-foreground mt-2">
-                          par étudiant / par année
+                          {t('pricing.perStudent')} / {t('pricing.perYear')}
                         </div>
                       </div>
                     </div>
@@ -99,8 +101,8 @@ const Pricing = () => {
                     </div>
 
                     <Link to="/contact" className="block">
-                      <Button className="w-full gradient-primary shadow-glow" size="lg">
-                        Commencer maintenant
+                      <Button className="w-full shadow-md hover:shadow-lg transition-smooth" size="lg">
+                        {t('pricing.cta')}
                       </Button>
                     </Link>
                   </Card>

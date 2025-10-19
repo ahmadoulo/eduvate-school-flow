@@ -77,9 +77,9 @@ const Navbar = () => {
               )}
             </Button>
 
-            <Link to="/login">
-              <Button variant="outline">{t('nav.login')}</Button>
-            </Link>
+            <a href="https://dash.eduvate.io" target="_blank" rel="noopener noreferrer">
+              <Button className="shadow-md hover:shadow-lg transition-smooth">{t('nav.login')}</Button>
+            </a>
           </div>
         </div>
       </div>

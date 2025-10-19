@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Eduvate. {t('footer.rights')}.</p>
           <p className="mt-2">
-            Created by{' '}
+            {t('footer.createdBy')}{' '}
             <a
               href="https://senovate-it.com"
               target="_blank"
