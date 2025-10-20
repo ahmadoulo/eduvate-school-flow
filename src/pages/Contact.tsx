@@ -19,13 +19,40 @@ const Contact = () => {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: t('contact.successTitle'),
-      description: t('contact.successMessage'),
-    });
-    setFormData({ name: '', email: '', message: '' });
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "04eb2431-29a4-4cd9-b71a-937cf4b0e47d",
+          ...formData
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        toast({
+          title: t('contact.successTitle'),
+          description: t('contact.successMessage'),
+        });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        toast({
+          title: "Erreur",
+          description: t('contact.errorMessage'),
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Erreur",
+        description: t('contact.errorMessage'),
+        variant: "destructive",
+      });
+    }
   };
 
   return (

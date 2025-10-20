@@ -27,7 +27,6 @@ const Pricing = () => {
     `💬 Communication temps réel`,
     `🛡️ ${t('pricing.support')}`,
     `☁️ Stockage cloud sécurisé`,
-    `📲 Application mobile`,
   ];
 
   const plans = [
@@ -81,12 +80,9 @@ const Pricing = () => {
                       <h3 className="font-bold mb-4">{plan.name}</h3>
                       
                       <div className="mb-2">
-                        <div className="flex items-baseline justify-center gap-2">
-                          <span className="text-5xl font-bold text-primary">{pricing.price}</span>
-                          <span className="text-2xl text-muted-foreground">{pricing.symbol}</span>
-                        </div>
-                        <div className="text-muted-foreground mt-2">
-                          {t('pricing.perStudent')} / {t('pricing.perYear')}
+                        <div className="flex flex-col items-center justify-center gap-2">
+                          <span className="text-3xl font-bold text-primary">{t('pricing.contactUs')}</span>
+                          <span className="text-muted-foreground">{t('pricing.customPricing')}</span>
                         </div>
                       </div>
                     </div>

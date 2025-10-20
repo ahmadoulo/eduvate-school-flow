@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  eduvate-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eduvate-web
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - eduvate-network
+
+networks:
+  eduvate-network:
+    driver: bridge
