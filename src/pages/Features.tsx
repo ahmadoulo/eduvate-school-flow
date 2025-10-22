@@ -9,7 +9,10 @@ import {
   BarChart3,
   Shield,
   Cloud,
+  ArrowRight,
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -71,9 +74,10 @@ const Features = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="font-bold mb-6">Fonctionnalités Complètes</h1>
-            <p className="text-muted-foreground max-w-3xl mx-auto">
-              Tout ce dont vous avez besoin pour gérer votre établissement scolaire de manière moderne et efficace.
+            <h1 className="text-5xl font-bold mb-6">Fonctionnalités Complètes</h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Tout ce dont vous avez besoin pour gérer votre établissement scolaire de manière moderne et efficace. 
+              Une plateforme tout-en-un qui simplifie chaque aspect de la gestion scolaire.
             </p>
           </motion.div>
         </div>
@@ -98,6 +102,34 @@ const Features = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-4xl text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold mb-6">Prêt à moderniser votre établissement ?</h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              Découvrez comment Eduvate peut transformer la gestion de votre école avec l'intelligence artificielle.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link to="/coming-soon">
+                <Button size="lg" className="shadow-md hover:shadow-lg transition-smooth">
+                  Découvrir la plateforme <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button size="lg" variant="outline" className="shadow-sm hover:shadow-md transition-smooth">
+                  Nous contacter
+                </Button>
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </section>
 

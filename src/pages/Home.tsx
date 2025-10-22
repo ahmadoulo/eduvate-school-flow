@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { ArrowRight, Users, Building2, Globe2, Check, Brain, Clock, DollarSign, UserCog, QrCode, Calendar, Bell, Languages } from 'lucide-react';
+import { ArrowRight, Target, Rocket, Sparkles, Check, Brain, Clock, DollarSign, UserCog, QrCode, Calendar, Bell } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
@@ -12,14 +12,26 @@ const Home = () => {
   const { t } = useTranslation();
 
   const stats = [
-    { number: '500+', label: t('stats.schools'), icon: Building2 },
-    { number: '50K+', label: t('stats.students'), icon: Users },
-    { number: '15+', label: t('stats.countries'), icon: Globe2 },
+    { 
+      label: t('stats.vision'), 
+      description: t('stats.visionText'), 
+      icon: Target 
+    },
+    { 
+      label: t('stats.join'), 
+      description: t('stats.joinText'), 
+      icon: Rocket 
+    },
+    { 
+      label: t('stats.innovation'), 
+      description: t('stats.innovationText'), 
+      icon: Sparkles 
+    },
   ];
 
   const keyFeatures = [
     {
-      icon: Building2,
+      icon: Target,
       title: t('keyFeatures.management.title'),
       description: t('keyFeatures.management.description'),
     },
@@ -68,11 +80,6 @@ const Home = () => {
       title: t('keyFeatures.notifications.title'),
       description: t('keyFeatures.notifications.description'),
     },
-    {
-      icon: Languages,
-      title: t('keyFeatures.multilingual.title'),
-      description: t('keyFeatures.multilingual.description'),
-    },
   ];
 
   const whyChooseFeatures = [
@@ -114,11 +121,11 @@ const Home = () => {
                 {t('hero.description')}
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="https://dash.eduvate.io" target="_blank" rel="noopener noreferrer">
+                <Link to="/coming-soon">
                   <Button size="lg" className="shadow-md hover:shadow-lg transition-smooth text-base px-8 h-12">
                     {t('hero.cta')} <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
-                </a>
+                </Link>
                 <Link to="/contact">
                   <Button size="lg" variant="outline" className="shadow-sm hover:shadow-md transition-smooth text-base px-8 h-12">
                     {t('hero.demo')}
@@ -145,7 +152,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 border-y border-border bg-muted/30">
+      <section className="py-16 border-y border-border bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
@@ -157,9 +164,9 @@ const Home = () => {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <stat.icon className="w-12 h-12 mx-auto mb-4 text-primary" />
-                <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
-                <div className="text-muted-foreground">{stat.label}</div>
+                <stat.icon className="w-14 h-14 mx-auto mb-4 text-primary" />
+                <h3 className="text-2xl font-bold text-foreground mb-3">{stat.label}</h3>
+                <p className="text-muted-foreground">{stat.description}</p>
               </motion.div>
             ))}
           </div>
@@ -257,12 +264,48 @@ const Home = () => {
             <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
               {t('finalCta.subtitle')}
             </p>
-            <a href="https://dash.eduvate.io" target="_blank" rel="noopener noreferrer">
+            <Link to="/coming-soon">
               <Button size="lg" variant="secondary" className="shadow-lg hover:shadow-xl transition-smooth">
                 {t('hero.cta')} <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-            </a>
+            </Link>
           </motion.div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold mb-4">{t('faq.title')}</h2>
+          </motion.div>
+
+          <div className="space-y-6">
+            {[1, 2, 3, 4, 5, 6].map((num, index) => (
+              <motion.div
+                key={num}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Card className="p-6 hover:shadow-lg transition-smooth border-primary/10">
+                  <h3 className="text-xl font-semibold mb-3 text-primary">
+                    {t(`faq.q${num}`)}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {t(`faq.a${num}`)}
+                  </p>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 

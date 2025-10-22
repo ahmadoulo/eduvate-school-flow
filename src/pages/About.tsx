@@ -52,14 +52,23 @@ const About = () => {
             className="prose prose-lg mx-auto mb-20"
           >
             <h2 className="text-3xl font-bold mb-6">Notre Histoire</h2>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground mb-4">
               Eduvate est née de la vision de rendre la gestion scolaire plus accessible et efficace. 
-              Nous avons observé que de nombreux établissements perdaient un temps précieux avec des systèmes 
-              obsolètes et fragmentés.
+              Nous avons observé que de nombreux établissements en Afrique et dans le monde perdaient un temps précieux 
+              avec des systèmes obsolètes, fragmentés ou inexistants.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              Notre équipe, composée d'experts en éducation et en technologie, développe une solution complète 
+              qui centralise toutes les fonctions essentielles d'un établissement scolaire en une seule plateforme cloud 
+              propulsée par l'intelligence artificielle.
+            </p>
+            <p className="text-muted-foreground mb-4">
+              Nous croyons fermement que la technologie peut transformer l'éducation en Afrique. Notre mission est 
+              d'offrir aux écoles des outils modernes, intuitifs et puissants qui leur permettent de se concentrer 
+              sur l'essentiel : l'éducation de qualité.
             </p>
             <p className="text-muted-foreground">
-              Notre équipe, composée d'experts en éducation et en technologie, a créé une solution complète 
-              qui centralise toutes les fonctions essentielles d'un établissement scolaire en une seule plateforme cloud.
+              Rejoignez-nous dans cette révolution éducative. Ensemble, nous construisons l'avenir de la gestion scolaire.
             </p>
           </motion.div>
 
