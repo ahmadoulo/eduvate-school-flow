@@ -13,12 +13,68 @@ const resources = {
         login: 'Connexion',
       },
       hero: {
-        title: 'Plateforme IA Révolutionnaire pour la Gestion Scolaire',
-        subtitle: 'Transformez votre école avec l\'IA, l\'automatisation intelligente et WhatsApp intégré. Tout en un seul endroit.',
-        cta: 'Essayer gratuitement',
+        title: 'La gestion scolaire réinventée par l\'IA',
+        subtitle: 'Une plateforme moderne, intuitive et intelligente pour piloter toute votre école depuis un seul espace.',
+        description: 'Simplifiez la gestion de vos classes, enseignants, étudiants et finances. Automatisez les tâches manuelles, gagnez du temps et concentrez-vous sur l\'essentiel : l\'éducation.',
+        cta: 'Découvrir la plateforme',
         demo: 'Demander une démo',
-        usedBy: 'Utilisé par',
-        schools: 'écoles',
+      },
+      keyFeatures: {
+        title: 'Fonctionnalités clés',
+        management: {
+          title: 'Gestion complète et centralisée',
+          description: 'Administrez vos classes, enseignants, emplois du temps, salles et étudiants depuis un dashboard intelligent. Fini les fichiers Excel éparpillés et les heures perdues à organiser vos plannings.',
+        },
+        ai: {
+          title: 'IA intégrée pour automatiser votre quotidien',
+          description: 'Notre intelligence artificielle vous assiste :',
+          feature1: 'Génération automatique des emplois du temps et bulletins',
+          feature2: 'Analyse des performances et recommandations pédagogiques',
+          feature3: 'Prévisions sur les absences, paiements et résultats',
+        },
+        instant: {
+          title: 'Accès instantané aux données',
+          description: 'Toutes vos informations — étudiants, cours, notes, finances — accessibles en temps réel, partout, sur tous les appareils.',
+        },
+        finance: {
+          title: 'Gestion des finances simplifiée',
+          description: 'Suivi des paiements, facturation automatique, relances intelligentes. La plateforme s\'occupe de tout, vous gardez le contrôle.',
+        },
+        roles: {
+          title: 'Expérience personnalisée pour chaque rôle',
+          admin: 'Administrateurs : vision globale, statistiques et gestion complète',
+          teacher: 'Enseignants : cours, présences, notes, communication directe avec les parents',
+          student: 'Étudiants : calendrier, devoirs, bulletins, notifications',
+          parent: 'Parents : suivi en temps réel des progrès et absences',
+        },
+        qr: {
+          title: 'Prise de présence via QR code',
+          description: 'Un simple scan pour enregistrer la présence des étudiants — rapide, fiable et sécurisé.',
+        },
+        calendar: {
+          title: 'Calendrier intelligent',
+          description: 'Visualisez toutes les activités de l\'école : cours, réunions, examens, événements — automatiquement synchronisés.',
+        },
+        notifications: {
+          title: 'Notifications automatiques',
+          description: 'Informez vos étudiants et parents en un clic : notes publiées, absences, rappels, paiements, événements.',
+        },
+        multilingual: {
+          title: 'Multilingue complet',
+          description: 'Un site et une interface accessibles dans plusieurs langues. Une fois la langue choisie, tout le site s\'adapte — pas seulement une partie.',
+        },
+      },
+      whyChoose: {
+        title: 'Pourquoi choisir notre plateforme ?',
+        feature1: 'Outil 100% en ligne, sécurisé et accessible partout',
+        feature2: 'Zéro installation, zéro maintenance',
+        feature3: 'Données centralisées et protégées',
+        feature4: 'Automatisation intelligente grâce à l\'IA',
+        feature5: 'Pensé avec et pour les établissements scolaires modernes',
+      },
+      finalCta: {
+        title: 'Transformez la gestion de votre école',
+        subtitle: 'Rejoignez la nouvelle génération d\'établissements connectés. Simplifiez, automatisez, innovez.',
       },
       stats: {
         schools: 'Écoles',
@@ -103,12 +159,68 @@ const resources = {
         login: 'Login',
       },
       hero: {
-        title: 'Revolutionary AI Platform for School Management',
-        subtitle: 'Transform your school with AI, intelligent automation and integrated WhatsApp. All in one place.',
-        cta: 'Try for Free',
+        title: 'School Management Reinvented by AI',
+        subtitle: 'A modern, intuitive and intelligent platform to manage your entire school from one place.',
+        description: 'Simplify the management of your classes, teachers, students and finances. Automate manual tasks, save time and focus on what matters: education.',
+        cta: 'Discover the Platform',
         demo: 'Request Demo',
-        usedBy: 'Used by',
-        schools: 'schools',
+      },
+      keyFeatures: {
+        title: 'Key Features',
+        management: {
+          title: 'Complete and Centralized Management',
+          description: 'Manage your classes, teachers, schedules, rooms and students from an intelligent dashboard. No more scattered Excel files and hours lost organizing schedules.',
+        },
+        ai: {
+          title: 'Integrated AI to Automate Your Daily Tasks',
+          description: 'Our artificial intelligence assists you:',
+          feature1: 'Automatic generation of schedules and report cards',
+          feature2: 'Performance analysis and educational recommendations',
+          feature3: 'Predictions on absences, payments and results',
+        },
+        instant: {
+          title: 'Instant Data Access',
+          description: 'All your information — students, courses, grades, finances — accessible in real time, anywhere, on all devices.',
+        },
+        finance: {
+          title: 'Simplified Finance Management',
+          description: 'Payment tracking, automatic invoicing, smart reminders. The platform takes care of everything, you keep control.',
+        },
+        roles: {
+          title: 'Personalized Experience for Each Role',
+          admin: 'Administrators: global vision, statistics and complete management',
+          teacher: 'Teachers: courses, attendance, grades, direct communication with parents',
+          student: 'Students: calendar, homework, report cards, notifications',
+          parent: 'Parents: real-time tracking of progress and absences',
+        },
+        qr: {
+          title: 'QR Code Attendance',
+          description: 'A simple scan to record student attendance — fast, reliable and secure.',
+        },
+        calendar: {
+          title: 'Smart Calendar',
+          description: 'View all school activities: classes, meetings, exams, events — automatically synchronized.',
+        },
+        notifications: {
+          title: 'Automatic Notifications',
+          description: 'Inform your students and parents with one click: published grades, absences, reminders, payments, events.',
+        },
+        multilingual: {
+          title: 'Fully Multilingual',
+          description: 'A site and interface accessible in multiple languages. Once the language is chosen, the entire site adapts — not just a part.',
+        },
+      },
+      whyChoose: {
+        title: 'Why Choose Our Platform?',
+        feature1: '100% online tool, secure and accessible anywhere',
+        feature2: 'Zero installation, zero maintenance',
+        feature3: 'Centralized and protected data',
+        feature4: 'Intelligent automation with AI',
+        feature5: 'Designed with and for modern educational institutions',
+      },
+      finalCta: {
+        title: 'Transform Your School Management',
+        subtitle: 'Join the new generation of connected institutions. Simplify, automate, innovate.',
       },
       stats: {
         schools: 'Schools',
@@ -193,12 +305,68 @@ const resources = {
         login: 'Iniciar sesión',
       },
       hero: {
-        title: 'Plataforma IA Revolucionaria para Gestión Escolar',
-        subtitle: 'Transforme su escuela con IA, automatización inteligente y WhatsApp integrado. Todo en un solo lugar.',
-        cta: 'Probar Gratis',
+        title: 'Gestión Escolar Reinventada por IA',
+        subtitle: 'Una plataforma moderna, intuitiva e inteligente para gestionar toda su escuela desde un solo espacio.',
+        description: 'Simplifique la gestión de sus clases, profesores, estudiantes y finanzas. Automatice las tareas manuales, ahorre tiempo y concéntrese en lo esencial: la educación.',
+        cta: 'Descubrir la Plataforma',
         demo: 'Solicitar Demo',
-        usedBy: 'Usado por',
-        schools: 'escuelas',
+      },
+      keyFeatures: {
+        title: 'Características Clave',
+        management: {
+          title: 'Gestión Completa y Centralizada',
+          description: 'Administre sus clases, profesores, horarios, aulas y estudiantes desde un dashboard inteligente. Olvídese de archivos Excel dispersos y horas perdidas organizando horarios.',
+        },
+        ai: {
+          title: 'IA Integrada para Automatizar su Día a Día',
+          description: 'Nuestra inteligencia artificial le asiste:',
+          feature1: 'Generación automática de horarios y boletines',
+          feature2: 'Análisis de rendimiento y recomendaciones pedagógicas',
+          feature3: 'Predicciones sobre ausencias, pagos y resultados',
+        },
+        instant: {
+          title: 'Acceso Instantáneo a los Datos',
+          description: 'Toda su información — estudiantes, cursos, notas, finanzas — accesible en tiempo real, en cualquier lugar, en todos los dispositivos.',
+        },
+        finance: {
+          title: 'Gestión Financiera Simplificada',
+          description: 'Seguimiento de pagos, facturación automática, recordatorios inteligentes. La plataforma se encarga de todo, usted mantiene el control.',
+        },
+        roles: {
+          title: 'Experiencia Personalizada para Cada Rol',
+          admin: 'Administradores: visión global, estadísticas y gestión completa',
+          teacher: 'Profesores: cursos, asistencias, notas, comunicación directa con padres',
+          student: 'Estudiantes: calendario, tareas, boletines, notificaciones',
+          parent: 'Padres: seguimiento en tiempo real del progreso y ausencias',
+        },
+        qr: {
+          title: 'Registro de Asistencia por Código QR',
+          description: 'Un simple escaneo para registrar la asistencia de los estudiantes — rápido, confiable y seguro.',
+        },
+        calendar: {
+          title: 'Calendario Inteligente',
+          description: 'Visualice todas las actividades de la escuela: clases, reuniones, exámenes, eventos — sincronizados automáticamente.',
+        },
+        notifications: {
+          title: 'Notificaciones Automáticas',
+          description: 'Informe a sus estudiantes y padres con un clic: notas publicadas, ausencias, recordatorios, pagos, eventos.',
+        },
+        multilingual: {
+          title: 'Completamente Multilingüe',
+          description: 'Un sitio e interfaz accesibles en varios idiomas. Una vez elegido el idioma, todo el sitio se adapta — no solo una parte.',
+        },
+      },
+      whyChoose: {
+        title: '¿Por Qué Elegir Nuestra Plataforma?',
+        feature1: 'Herramienta 100% en línea, segura y accesible en cualquier lugar',
+        feature2: 'Cero instalación, cero mantenimiento',
+        feature3: 'Datos centralizados y protegidos',
+        feature4: 'Automatización inteligente con IA',
+        feature5: 'Diseñada con y para instituciones educativas modernas',
+      },
+      finalCta: {
+        title: 'Transforme la Gestión de su Escuela',
+        subtitle: 'Únase a la nueva generación de instituciones conectadas. Simplifique, automatice, innove.',
       },
       stats: {
         schools: 'Escuelas',
