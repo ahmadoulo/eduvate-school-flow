@@ -19,7 +19,7 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider defaultTheme="light" storageKey="eduvate-ui-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="eduvate-ui-theme">
       <I18nextProvider i18n={i18n}>
         <TooltipProvider>
           <Toaster />
