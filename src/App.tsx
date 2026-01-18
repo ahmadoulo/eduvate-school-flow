@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { I18nextProvider } from "react-i18next";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import ScrollToTop from "@/components/ScrollToTop";
 import i18n from "./lib/i18n";
 import Home from "./pages/Home";
 import Features from "./pages/Features";
@@ -25,6 +26,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/features" element={<Features />} />
