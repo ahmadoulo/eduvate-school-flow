@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import { GraduationCap, Github, Twitter, Linkedin, Mail, ArrowRight } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import logoEduvate from '@/assets/logo-eduvate.png';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -15,17 +16,12 @@ const Footer = () => {
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-2 space-y-6">
-            <Link to="/" className="flex items-center gap-3 group w-fit">
-              <div className="relative">
-                <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl group-hover:bg-primary/40 transition-all duration-500" />
-                <div className="relative bg-primary/10 p-2 rounded-xl border border-primary/20">
-                  <GraduationCap className="w-7 h-7 text-primary" />
-                </div>
-              </div>
-              <span className="text-xl font-bold tracking-tight">
-                <span className="text-foreground">Edu</span>
-                <span className="gradient-text">vate</span>
-              </span>
+            <Link to="/" className="flex items-center group w-fit">
+              <img 
+                src={logoEduvate} 
+                alt="Eduvate - Gestion scolaire intelligente" 
+                className="h-10 w-auto transition-all duration-300 group-hover:scale-105 dark:brightness-0 dark:invert"
+              />
             </Link>
             <p className="text-muted-foreground max-w-sm">
               {t('footer.tagline')}
@@ -56,7 +52,7 @@ const Footer = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contact@eduvate.io"
+                href="mailto:contact@eduvate.app"
                 className="p-2 rounded-lg bg-muted/50 hover:bg-primary/10 hover:text-primary transition-all duration-300"
               >
                 <Mail className="w-5 h-5" />

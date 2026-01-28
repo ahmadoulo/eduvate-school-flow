@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { GraduationCap, Globe, Moon, Sun, Menu, X, ExternalLink } from 'lucide-react';
+import { Globe, Moon, Sun, Menu, X, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/components/ThemeProvider';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logoEduvate from '@/assets/logo-eduvate.png';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -51,17 +52,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 rounded-xl blur-xl group-hover:bg-primary/40 transition-all duration-500" />
-              <div className="relative bg-primary/10 p-2 rounded-xl border border-primary/20 group-hover:border-primary/40 transition-all duration-300">
-                <GraduationCap className="w-7 h-7 text-primary" />
-              </div>
-            </div>
-            <span className="text-xl font-bold tracking-tight">
-              <span className="text-foreground">Edu</span>
-              <span className="gradient-text">vate</span>
-            </span>
+          <Link to="/" className="flex items-center group">
+            <img 
+              src={logoEduvate} 
+              alt="Eduvate - Gestion scolaire intelligente" 
+              className="h-10 w-auto transition-all duration-300 group-hover:scale-105 dark:brightness-0 dark:invert"
+            />
           </Link>
 
           {/* Desktop Navigation */}
