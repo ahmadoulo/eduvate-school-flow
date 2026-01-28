@@ -5,7 +5,8 @@ import { Button } from '@/components/ui/button';
 import { useTheme } from '@/components/ThemeProvider';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logoEduvate from '@/assets/logo-eduvate.png';
+import logoEduvateLight from '@/assets/logo-eduvate-light.png';
+import logoEduvateDark from '@/assets/logo-eduvate-dark.png';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,6 +19,8 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const logoSrc = theme === 'dark' ? logoEduvateDark : logoEduvateLight;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,9 +57,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center group">
             <img 
-              src={logoEduvate} 
+              src={logoSrc} 
               alt="Eduvate - Gestion scolaire intelligente" 
-              className="h-12 md:h-14 w-auto transition-all duration-300 group-hover:scale-105 dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+              className="h-14 md:h-16 w-auto transition-all duration-300 group-hover:scale-105"
             />
           </Link>
 

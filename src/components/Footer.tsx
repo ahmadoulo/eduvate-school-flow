@@ -2,10 +2,15 @@ import { useTranslation } from 'react-i18next';
 import { Github, Twitter, Linkedin, Mail, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import logoEduvate from '@/assets/logo-eduvate.png';
+import { useTheme } from '@/components/ThemeProvider';
+import logoEduvateLight from '@/assets/logo-eduvate-light.png';
+import logoEduvateDark from '@/assets/logo-eduvate-dark.png';
 
 const Footer = () => {
   const { t } = useTranslation();
+  const { theme } = useTheme();
+
+  const logoSrc = theme === 'dark' ? logoEduvateDark : logoEduvateLight;
 
   return (
     <footer className="relative border-t border-border/50 bg-background">
@@ -18,9 +23,9 @@ const Footer = () => {
           <div className="lg:col-span-2 space-y-6">
             <Link to="/" className="flex items-center group w-fit">
               <img 
-                src={logoEduvate} 
+                src={logoSrc} 
                 alt="Eduvate - Gestion scolaire intelligente" 
-                className="h-12 md:h-14 w-auto transition-all duration-300 group-hover:scale-105 dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+                className="h-14 md:h-16 w-auto transition-all duration-300 group-hover:scale-105"
               />
             </Link>
             <p className="text-muted-foreground max-w-sm">
