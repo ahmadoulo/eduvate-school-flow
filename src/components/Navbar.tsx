@@ -56,7 +56,7 @@ const Navbar = () => {
             <img 
               src={logoEduvate} 
               alt="Eduvate - Gestion scolaire intelligente" 
-              className="h-10 w-auto transition-all duration-300 group-hover:scale-105 dark:brightness-0 dark:invert"
+              className="h-12 md:h-14 w-auto transition-all duration-300 group-hover:scale-105 dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
             />
           </Link>
 
